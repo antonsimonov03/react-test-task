@@ -24,6 +24,12 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "crcf": [
+    "typescript",
+    "notest",
+    "createindex",
+    "uppercase"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
