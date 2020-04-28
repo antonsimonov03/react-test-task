@@ -1,0 +1,123 @@
+@import '../../variables.css';
+
+.quote-form {
+  padding: 30px 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px #0000000d;
+}
+
+.quote-form__horizontal-line {
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+.quote-form__horizontal-line_full-width {
+  width: 284px;
+  transform: translateX(-25px);
+}
+
+.quote-form__title {
+  color: var(--primary-black);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.quote-form__reset {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 15px 0;
+  background-color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.reset-button__title {
+  margin-left: 6px;
+}
+
+.quote-form .MuiFormControl-root {
+  width: 100%;
+  margin: 0;
+}
+
+.quote-form__entity-name {
+  margin-top: 20px !important;
+}
+
+.quote-form__entity-name-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.entity-name-switch__title {
+  color: var(--primary-black);
+  font-size: 14px;
+}
+
+.quote-form__zip-code {
+  margin-top: 15px !important;
+}
+
+.quote-form__commodity {
+  margin-top: 15px !important;
+}
+
+.quote-form__annual-usage {
+  margin-top: 15px !important;
+}
+
+.quote-form__start-date {
+  margin-top: 15px !important;
+}
+
+.quote-form__state {
+  margin-top: 15px !important;
+}
+
+.quote-form__zone {
+  margin-top: 15px !important;
+}
+
+.quote-form__utility {
+  margin-top: 15px !important;
+}
+
+.quote-form__rate-class {
+  margin-top: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.quote-form__search {
+  padding: 18px 0;
+  width: 100%;
+  background-color: var(--primary-green);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+
+.quote-form__search:enabled:hover,
+.quote-form__reset:enabled:hover {
+  filter: brightness(110%);
+}
+
+.quote-form__search:disabled,
+.quote-form__reset:disabled {
+  background-color: #f2f2f2;
+  color: #93979b;
+}
