@@ -1,0 +1,35 @@
+@import '../../variables.css';
+
+.dashboard__horizontal-line {
+  height: 1px;
+  background-color: #eaeaea;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.dashboard__table {
+  padding: 5px 0;
+}
+
+.dashboard__headers {
+  display: grid;
+  grid-template-columns: 50px 150px 100px 100px 150px 1fr;
+  padding: 0 15px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard-header__title {
+  margin-right: 5px;
+  font-size: 13px;
+  color: var(--primary-gray);
+}
+
+.dashboard-header__icon {
+  height: 11px;
+  opacity: 0.8;
+}

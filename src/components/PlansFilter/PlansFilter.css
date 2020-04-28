@@ -1,0 +1,18 @@
+@import '../../variables.css';
+
+.plans-filter__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-gray);
+  margin-bottom: 10px;
+}
+
+.plans-filter__options {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.plans-filter__filter-group div:first-child {
+  margin-right: 10px;
+}
