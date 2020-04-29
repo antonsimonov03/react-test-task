@@ -1,0 +1,52 @@
+@import '../../variables.css';
+
+.plan {
+  margin-top: 15px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 50px 150px 100px 100px 150px 100px 1fr;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 3px 5px #0000000d;
+}
+
+.plan__index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+
+.plan__vertical-line {
+  height: 28px;
+  width: 1px;
+  margin-right: 20px;
+  background-color: #d3d5dc;
+}
+
+.plan__supplier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.plan__supplier-logo {
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.plan__supplier-name {
+  color: var(--primary-black);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.plan__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}

@@ -1,0 +1,24 @@
+@import '../../../variables.css';
+
+.label {
+  display: inline;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.label_blue {
+  color: var(--primary-blue);
+  background-color: #e9f1f8;
+}
+
+.label_black {
+  color: var(--primary-black);
+  background-color: #f7f8fa;
+}
+
+.label_green {
+  color: var(--primary-green);
+  background-color: #f6fcf5;
+}

@@ -3,6 +3,7 @@ import { PlansFilter } from '../PlansFilter'
 
 import './Dashboard.css'
 import { Header } from './Header'
+import { Plan } from '../Plan'
 
 export const Dashboard = () => {
   return (
@@ -18,7 +19,17 @@ export const Dashboard = () => {
           <Header title="Estimated Savings" />
           <Header title="Green Energy" />
         </div>
-        <div className="dashboard__plans"></div>
+        <ul className="dashboard__plans">
+          <li>
+            <Plan />
+          </li>
+          <li>
+            <Plan />
+          </li>
+          <li>
+            <Plan />
+          </li>
+        </ul>
       </div>
     </div>
   )

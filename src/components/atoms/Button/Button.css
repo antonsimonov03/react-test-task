@@ -1,0 +1,29 @@
+@import '../../../variables.css';
+
+.button {
+  padding: 13px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 150ms linear;
+  white-space: nowrap;
+}
+
+.button_outlined_green {
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+}
+
+.button_outlined_green:hover {
+  color: #fff;
+  background-color: var(--primary-green);
+}
+
+.button_text_gray {
+  color: var(--primary-gray);
+}
+
+.button_text_gray:hover {
+  background-color: #f7f8fa;
+}
