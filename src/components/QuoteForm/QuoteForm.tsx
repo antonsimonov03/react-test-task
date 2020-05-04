@@ -3,6 +3,7 @@ import { SelectMenu } from '../atoms/SelectMenu/SelectMenu'
 import { TextField } from '@material-ui/core'
 import RefreshIcon from '@material-ui/icons/Refresh'
 import { AntSwitch } from '../atoms/AntSwitch'
+import { Datepicker } from '../atoms/Datepicker'
 
 import './QuoteForm.css'
 
@@ -19,7 +20,7 @@ export const QuoteForm = () => {
   }
 
   return (
-    <form className="quote-form">
+    <div className="quote-form">
       <h2 className="quote-form__title">Quote</h2>
       <button disabled className="quote-form__reset reset-button">
         <RefreshIcon fontSize="small" />
@@ -56,13 +57,7 @@ export const QuoteForm = () => {
         variant="outlined"
         disabled
       />
-      <SelectMenu
-        classList="quote-form__start-date"
-        id="start-date"
-        defaultValue="December, 2020"
-        label="Contract Start Date"
-        items={[{ title: 'December, 2020', value: 'December, 2020' }]}
-      />
+      <Datepicker />
       <TextField
         className="quote-form__state"
         label="State"
@@ -93,6 +88,6 @@ export const QuoteForm = () => {
       />
       <hr className="quote-form__horizontal-line quote-form__horizontal-line_full-width" />
       <button className="quote-form__search">Search Offers</button>
-    </form>
+    </div>
   )
 }
