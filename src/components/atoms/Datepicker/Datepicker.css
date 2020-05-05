@@ -40,18 +40,32 @@
 }
 
 .datepicker__content {
+  color: var(--primary-black);
+  font-size: 15px;
+  font-weight: 700;
   width: 255px;
   padding: 10px 5px;
   position: absolute;
   top: calc(100% + 10px);
   left: -1px;
-  /* opacity: 0; */
-  /* transform: scale(0); */
+  opacity: 0;
+  transform: scale(0);
   border: 1px solid var(--primary-gray);
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 10px 20px #00000033;
   z-index: 4;
+  transition: all 150ms linear;
+}
+
+.datepicker__trigger:focus + .datepicker__content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.datepicker__content:focus {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .datepicker__header {

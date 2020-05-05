@@ -25,3 +25,11 @@ export const setMonth = (date: Date, index: number): Date => {
 
   return _date
 }
+
+export const dateIsBefore = (firstDate: Date, secondDate: Date) => {
+  return firstDate.getTime() < secondDate.getTime()
+}
+
+export const dateIsSameYear = (firstDate: Date, secondDate: Date) => {
+  return firstDate.getFullYear() === secondDate.getFullYear()
+}
